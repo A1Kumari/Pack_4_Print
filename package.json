@@ -21,7 +21,7 @@
     "@vite-pwa/assets-generator": "^0.2.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "comlink": "^4.4.1",
+    "comlink": "^4.4.2",
     "efficient-rect-packer": "^1.1.2",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
@@ -44,12 +44,12 @@
     "vite-plugin-pwa": "^0.20.5"
   },
   "devDependencies": {
-    "@types/node": "^22.7.4",
+    "@types/node": "^22.10.10",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
