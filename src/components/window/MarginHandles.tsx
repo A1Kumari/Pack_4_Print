@@ -1,9 +1,9 @@
 import React from "react";
-import { Margin } from "../../redux/features/slices/mainSlice";
-import { useAppSelector } from "../../redux/hooks";
-import MarginHandleIcon from "../../assets/MarginHandleIcon";
-import useMargin from "../../hooks/useMargin";
-import { ImageBox } from "../../pages/pack/Pack";
+import { Margin } from "../../redux/features/slices/mainSlice.js";
+import { useAppSelector } from "../../redux/hooks.js";
+import MarginHandleIcon from "../../assets/MarginHandleIcon.js";
+import useMargin from "../../hooks/useMargin.js";
+import { ImageBox } from "../../pages/pack/Pack.js";
 
 interface Props {
     localImages: ImageBox[];

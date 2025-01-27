@@ -1,5 +1,5 @@
 import { ClipLoader } from 'react-spinners'
-import { useAppSelector } from '../../../redux/hooks';
+import { useAppSelector } from '../../../redux/hooks.js';
 
 const Loading = () => {
     const { packingProgress } = useAppSelector((state) => state.main);

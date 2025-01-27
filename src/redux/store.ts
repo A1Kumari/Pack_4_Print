@@ -1,5 +1,5 @@
 import { configureStore, createListenerMiddleware } from "@reduxjs/toolkit";
-import mainSlice from "./features/slices/mainSlice";
+import mainSlice from "./features/slices/mainSlice.js";
 
 // Create the middleware instance and methods
 const listenerMiddleware = createListenerMiddleware();

@@ -1,4 +1,4 @@
-import Pack4Print from "./Pack4Print";
+import Pack4Print from "./Pack4Print.js";
 
 const Header = () => {
     return (

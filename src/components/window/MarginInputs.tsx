@@ -1,9 +1,9 @@
 import { InformationCircleIcon } from '@heroicons/react/24/outline'
-import LabelInput from '../LabelInput'
-import { Margin, setContainer } from '../../redux/features/slices/mainSlice';
-import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import { ImageBox } from '../../pages/pack/Pack';
-import { positionImages } from '../utils/resizingWindowUtils';
+import LabelInput from '../LabelInput.js'
+import { Margin, setContainer } from '../../redux/features/slices/mainSlice.js';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks.js';
+import { ImageBox } from '../../pages/pack/Pack.js';
+import { positionImages } from '../utils/resizingWindowUtils.js';
 
 type MarginInputsProps = {
     localImages: ImageBox[];

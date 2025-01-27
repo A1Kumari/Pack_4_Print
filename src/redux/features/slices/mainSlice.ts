@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { A3, A4, PaperSize } from "../../../data/paperSizes";
+import { A3, A4, PaperSize } from "../../../data/paperSizes.js";
 
 export interface ContainerType {
     w: number;

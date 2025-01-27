@@ -1,6 +1,6 @@
-import LabelInput from "../LabelInput";
-import { setContainer, setShowBorder } from "../../redux/features/slices/mainSlice";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import LabelInput from "../LabelInput.js";
+import { setContainer, setShowBorder } from "../../redux/features/slices/mainSlice.js";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks.js";
 
 type ResizeWindowSettingsProps = {
     showMarginControls: boolean;

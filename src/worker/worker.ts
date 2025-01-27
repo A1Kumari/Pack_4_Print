@@ -3,10 +3,10 @@
 import {
     efficientPackingProps,
     efficientPacking as efficientPack,
-} from "@/algorithms/efficient";
-import { hybridFirstFit } from "@/algorithms/hybridFirstFit";
-import { AlgorithmProps } from "@/algorithms/utils";
-import { Algorithm } from "@/redux/features/slices/mainSlice";
+} from "@/algorithms/efficient.js";
+import { hybridFirstFit } from "@/algorithms/hybridFirstFit.js";
+import { AlgorithmProps } from "@/algorithms/utils.js";
+import { Algorithm } from "@/redux/features/slices/mainSlice.js";
 
 declare const self: DedicatedWorkerGlobalScope;
 

@@ -1,4 +1,4 @@
-import { useAppSelector } from '@/redux/hooks'
+import { useAppSelector } from '@/redux/hooks.js'
 
 const PageWidthIndicator = () => {
     const { container } = useAppSelector((state) => state.main)

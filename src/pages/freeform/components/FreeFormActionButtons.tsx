@@ -1,10 +1,10 @@
-import { useAppSelector } from "../../../redux/hooks";
-import { ImageBox } from "@/pages/pack/Pack";
-import ResetButton from "@/components/actionButtons/ResetButton";
-import SaveAsPdfButton from "@/components/actionButtons/SaveAsPDFButton";
-import ResizeButton from "@/components/actionButtons/ResizeButton";
-import ShowFreeFormResult from "@/components/actionButtons/ShowFreeFormResult";
-import PrintButton from "@/components/actionButtons/PrintButton";
+import { useAppSelector } from "../../../redux/hooks.js";
+import { ImageBox } from "@/pages/pack/Pack.js";
+import ResetButton from "@/components/actionButtons/ResetButton.js";
+import SaveAsPdfButton from "@/components/actionButtons/SaveAsPDFButton.js";
+import ResizeButton from "@/components/actionButtons/ResizeButton.js";
+import ShowFreeFormResult from "@/components/actionButtons/ShowFreeFormResult.js";
+import PrintButton from "@/components/actionButtons/PrintButton.js";
 
 
 

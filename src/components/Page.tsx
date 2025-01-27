@@ -1,7 +1,7 @@
 // Page.tsx
 import React from "react";
-import { ImageBox } from "../pages/pack/Pack";
-import { useAppSelector } from "@/redux/hooks";
+import { ImageBox } from "../pages/pack/Pack.js";
+import { useAppSelector } from "@/redux/hooks.js";
 
 interface PageProps {
     boxSet: ImageBox[];

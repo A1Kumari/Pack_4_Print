@@ -1,5 +1,5 @@
-import { ImageBox } from "@/pages/pack/Pack";
-import { AlgorithmProps } from "./utils";
+import { ImageBox } from "@/pages/pack/Pack.js";
+import { AlgorithmProps } from "./utils.js";
 
 export const hybridFirstFit = async ({
     images,

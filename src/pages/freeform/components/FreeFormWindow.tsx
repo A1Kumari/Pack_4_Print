@@ -1,13 +1,13 @@
-import PageEndIndicators from "@/components/PageEndIndicators";
-import PageWidthIndicator from "@/components/PageWidthIndicator";
-import useFreeForm from "@/hooks/useFreeForm";
-import Options from "@/components/window/Options";
-import ResizeAnchor from "@/components/window/ResizeAnchor";
-import ResizeWindowSettings from "@/components/window/ResizeWindowSettings";
-import { ImageBox } from "@/pages/pack/Pack";
-import { useAppSelector } from "@/redux/hooks";
+import PageEndIndicators from "@/components/PageEndIndicators.js";
+import PageWidthIndicator from "@/components/PageWidthIndicator.js";
+import useFreeForm from "@/hooks/useFreeForm.js";
+import Options from "@/components/window/Options.js";
+import ResizeAnchor from "@/components/window/ResizeAnchor.js";
+import ResizeWindowSettings from "@/components/window/ResizeWindowSettings.js";
+import { ImageBox } from "@/pages/pack/Pack.js";
+import { useAppSelector } from "@/redux/hooks.js";
 import React, { useState } from "react";
-import RotateButton from "@/components/window/RotateButton";
+import RotateButton from "@/components/window/RotateButton.js";
 
 
 interface Props {

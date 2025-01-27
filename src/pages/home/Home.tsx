@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSection from "./sections/HeroSection";
-import HowItWorks from "./sections/HowItWorks";
-import FeaturesSection from "./sections/FeaturesSection";
-import VisualDemoSection from "./sections/VisualDemoSection";
+import HeroSection from "./sections/HeroSection.js";
+import HowItWorks from "./sections/HowItWorks.js";
+import FeaturesSection from "./sections/FeaturesSection.js";
+import VisualDemoSection from "./sections/VisualDemoSection.js";
 
 const Home: React.FC = () => {
     return (

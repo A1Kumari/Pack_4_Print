@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { ClipLoader } from "react-spinners";
-import Button from "../Button";
-import { ImageBox } from "../../pages/pack/Pack";
-import { useAppSelector } from "../../redux/hooks";
-import { saveAsPDF } from "@/utils";
+import Button from "../Button.js";
+import { ImageBox } from "../../pages/pack/Pack.js";
+import { useAppSelector } from "../../redux/hooks.js";
+import { saveAsPDF } from "@/utils.js";
 
 interface SaveAsPdfButtonProps {
     boxes: ImageBox[][];

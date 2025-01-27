@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import FileDropArea from "../../components/FileDropArea";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import FileDropArea from "../../components/FileDropArea.js";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks.js";
 import {
     setImagesLoaded,
-} from "../../redux/features/slices/mainSlice";
+} from "../../redux/features/slices/mainSlice.js";
 
-import ResizingWindow from "./components/ResizingWindow";
-import Content from "./components/Content";
+import ResizingWindow from "./components/ResizingWindow.js";
+import Content from "./components/Content.js";
 
-import ActionButtons from "./components/ActionButtons";
-import { useScaleFactor } from "../../hooks/useScaleFactor";
-import SettingsPanel from "../../components/SettingsPanel";
+import ActionButtons from "./components/ActionButtons.js";
+import { useScaleFactor } from "../../hooks/useScaleFactor.js";
+import SettingsPanel from "../../components/SettingsPanel.js";
 
-import Loading from "./components/Loading";
-import Page from "@/components/Page";
+import Loading from "./components/Loading.js";
+import Page from "@/components/Page.js";
 
 export interface ImageBox {
     id: string;

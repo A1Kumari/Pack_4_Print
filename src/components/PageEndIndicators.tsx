@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import { ImageBox } from "@/pages/pack/Pack";
-import { useAppSelector } from "@/redux/hooks";
+import { cn } from "@/lib/utils.js";
+import { ImageBox } from "@/pages/pack/Pack.js";
+import { useAppSelector } from "@/redux/hooks.js";
 import React from "react";
 
 interface PageEndIndicatorsProps {

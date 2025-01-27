@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImageBox } from "../pages/pack/Pack";
+import { ImageBox } from "../pages/pack/Pack.js";
 
 const useImageURLs = (images: ImageBox[]) => {
     const [imageUrls, setImageUrls] = useState<Map<string, string>>(new Map());

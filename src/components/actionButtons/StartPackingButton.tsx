@@ -1,13 +1,13 @@
 import React from "react";
-import Button from "../Button";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import Button from "../Button.js";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks.js";
 import {
     setInResizeMode,
     setIsPacking,
     setPackingProgress,
-} from "../../redux/features/slices/mainSlice";
-import { ImageBox } from "../../pages/pack/Pack";
-import { createWorkerInstance } from "../../workerUtils";
+} from "../../redux/features/slices/mainSlice.js";
+import { ImageBox } from "../../pages/pack/Pack.js";
+import { createWorkerInstance } from "../../workerUtils.js";
 
 
 type StartPackingButtonsProps = {

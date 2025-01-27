@@ -1,7 +1,7 @@
 import { Crop, EllipsisVerticalIcon, File, Images, Scaling, Trash } from "lucide-react";
 import { useState } from "react";
-import CropModal from "./CropModal";
-import { ImageBox } from "../../pages/pack/Pack";
+import CropModal from "./CropModal.js";
+import { ImageBox } from "../../pages/pack/Pack.js";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -13,12 +13,12 @@ import {
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button";
-import { clearFileInput } from "@/utils";
-import CreateDuplicateModal from "./CreateDuplicatesModal";
-import ViewModal from "./ViewModal";
-import { PhotoSizeDefinition, photoSizes } from "@/data/paperSizes";
+} from "@/components/ui/dropdown-menu.js"
+import { Button } from "@/components/ui/button.js";
+import { clearFileInput } from "@/utils.js";
+import CreateDuplicateModal from "./CreateDuplicatesModal.js";
+import ViewModal from "./ViewModal.js";
+import { PhotoSizeDefinition, photoSizes } from "@/data/paperSizes.js";
 
 type OptionsProps = {
     id: string;

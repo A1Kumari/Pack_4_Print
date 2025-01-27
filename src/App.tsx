@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/header/Header";
-import Home from "./pages/home/Home";
-import Pack from "./pages/pack/Pack";
-import ModeSelection from "./pages/modeSelection/ModeSelection";
-import FreeForm from "./pages/freeform/FreeForm";
+import Footer from "./components/Footer.js";
+import Header from "./components/header/Header.js";
+import Home from "./pages/home/Home.js";
+import Pack from "./pages/pack/Pack.js";
+import ModeSelection from "./pages/modeSelection/ModeSelection.js";
+import FreeForm from "./pages/freeform/FreeForm.js";
 
 // wrapper with Header and Footer
 const w = (Component: React.FC) => {

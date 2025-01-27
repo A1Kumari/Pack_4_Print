@@ -1,4 +1,4 @@
-import { ContainerType } from "@/redux/features/slices/mainSlice";
+import { ContainerType } from "@/redux/features/slices/mainSlice.js";
 
 export interface PaperSize {
     name: string;

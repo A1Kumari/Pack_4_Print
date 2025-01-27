@@ -1,11 +1,11 @@
-import SaveAsPdfButton from "../../../components/actionButtons/SaveAsPDFButton";
-import { ImageBox } from "../Pack";
-import { useAppSelector } from "../../../redux/hooks";
-import ResetButton from "../../../components/actionButtons/ResetButton";
-import StartPackingButton from "../../../components/actionButtons/StartPackingButton";
-import ResizeButton from "../../../components/actionButtons/ResizeButton";
-import StopButton from "../../../components/actionButtons/StopButton";
-import PrintButton from "@/components/actionButtons/PrintButton";
+import SaveAsPdfButton from "../../../components/actionButtons/SaveAsPDFButton.js";
+import { ImageBox } from "../Pack.js";
+import { useAppSelector } from "../../../redux/hooks.js";
+import ResetButton from "../../../components/actionButtons/ResetButton.js";
+import StartPackingButton from "../../../components/actionButtons/StartPackingButton.js";
+import ResizeButton from "../../../components/actionButtons/ResizeButton.js";
+import StopButton from "../../../components/actionButtons/StopButton.js";
+import PrintButton from "@/components/actionButtons/PrintButton.js";
 
 
 type ActionButtonsProps = {

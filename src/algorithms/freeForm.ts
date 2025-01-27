@@ -1,7 +1,7 @@
-import { ImageBox } from "@/pages/pack/Pack";
-import { ContainerType } from "@/redux/features/slices/mainSlice";
+import { ImageBox } from "@/pages/pack/Pack.js";
+import { ContainerType } from "@/redux/features/slices/mainSlice.js";
 import { pack, UnpackedRect, Rectangle } from "efficient-rect-packer";
-import { AlgorithmProps } from "./utils";
+import { AlgorithmProps } from "./utils.js";
 // export interface ImageBox {
 //     id: string;
 //     w: number;

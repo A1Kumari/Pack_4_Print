@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useLayoutEffect } from "react";
-import { useAppSelector } from "../redux/hooks";
-import { ImageBox } from "../pages/pack/Pack";
-import { PhotoSizeDefinition, getPhotoSizeInPixels } from '../data/paperSizes';
-import usePreventScroll from "./usePreventScroll";
-import { positionImages } from "@/components/utils/resizingWindowUtils";
+import { useAppSelector } from "../redux/hooks.js";
+import { ImageBox } from "../pages/pack/Pack.js";
+import { PhotoSizeDefinition, getPhotoSizeInPixels } from '../data/paperSizes.js';
+import usePreventScroll from "./usePreventScroll.js";
+import { positionImages } from "@/components/utils/resizingWindowUtils.js";
 interface UseResizeImageProps {
     containerRef: React.RefObject<HTMLDivElement>;
     startWithMaxHalfWidth?: boolean;

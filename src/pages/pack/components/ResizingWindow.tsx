@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import useResizeImage from "../../../hooks/useImageResizer";
+import useResizeImage from "../../../hooks/useImageResizer.js";
 
-import MarginHandles from "../../../components/window/MarginHandles";
+import MarginHandles from "../../../components/window/MarginHandles.js";
 
-import { useAppSelector } from "../../../redux/hooks";
+import { useAppSelector } from "../../../redux/hooks.js";
 
-import ResizeAnchor from "../../../components/window/ResizeAnchor";
-import { ImageBox } from "../Pack";
-import MarginInputs from "../../../components/window/MarginInputs";
-import ResizeWindowSettings from "../../../components/window/ResizeWindowSettings";
-import Options from "../../../components/window/Options";
-import PageEndIndicators from "@/components/PageEndIndicators";
-import PageWidthIndicator from "@/components/PageWidthIndicator";
+import ResizeAnchor from "../../../components/window/ResizeAnchor.js";
+import { ImageBox } from "../Pack.js";
+import MarginInputs from "../../../components/window/MarginInputs.js";
+import ResizeWindowSettings from "../../../components/window/ResizeWindowSettings.js";
+import Options from "../../../components/window/Options.js";
+import PageEndIndicators from "@/components/PageEndIndicators.js";
+import PageWidthIndicator from "@/components/PageWidthIndicator.js";
 
 interface Props {
     images: ImageBox[];

@@ -1,7 +1,7 @@
-import { ImageBox } from "@/pages/pack/Pack";
-import Button from "../Button";
-import { printPages } from "@/utils";
-import { useAppSelector } from "@/redux/hooks";
+import { ImageBox } from "@/pages/pack/Pack.js";
+import Button from "../Button.js";
+import { printPages } from "@/utils.js";
+import { useAppSelector } from "@/redux/hooks.js";
 
 interface PrintButtonProps {
     boxes: ImageBox[][];

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../redux/hooks";
-import { setContainer } from "../redux/features/slices/mainSlice";
-import { useWindowResize } from "./useWindowResize";
+import { useAppDispatch, useAppSelector } from "../redux/hooks.js";
+import { setContainer } from "../redux/features/slices/mainSlice.js";
+import { useWindowResize } from "./useWindowResize.js";
 
 export const useScaleFactor = (
     containerWrapper: React.RefObject<HTMLDivElement>

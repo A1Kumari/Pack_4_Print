@@ -1,14 +1,14 @@
 import { createRef, useEffect, useRef, useState } from 'react'
-import FileDropArea from '../../components/FileDropArea'
-import { ImageBox } from '../pack/Pack';
-import SettingsPanel from '../../components/SettingsPanel';
-import { useAppDispatch, useAppSelector } from '@/redux/hooks';
-import FreeFormWindow from './components/FreeFormWindow';
-import { useScaleFactor } from '@/hooks/useScaleFactor';
-import ActionButtons from '../pack/components/ActionButtons';
-import { setImagesLoaded } from '@/redux/features/slices/mainSlice';
-import FreeFormActionButtons from './components/FreeFormActionButtons';
-import Page from '@/components/Page';
+import FileDropArea from '../../components/FileDropArea.js'
+import { ImageBox } from '../pack/Pack.js';
+import SettingsPanel from '../../components/SettingsPanel.js';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks.js';
+import FreeFormWindow from './components/FreeFormWindow.js';
+import { useScaleFactor } from '@/hooks/useScaleFactor.js';
+import ActionButtons from '../pack/components/ActionButtons.js';
+import { setImagesLoaded } from '@/redux/features/slices/mainSlice.js';
+import FreeFormActionButtons from './components/FreeFormActionButtons.js';
+import Page from '@/components/Page.js';
 
 const FreeForm = () => {
     const dispatch = useAppDispatch();
