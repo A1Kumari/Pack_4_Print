@@ -1,30 +1,28 @@
-import * as Comlink from "comlink";
+import { endpointSymbol } from "vite-plugin-comlink/symbol";
+import { wrap, Remote } from "comlink";
 
 // Define the type for your worker module
-type WorkerType = {
-    doWork: (data: string) => Promise<string>; // Adjust the type based on your worker's exposed API
-};
+type WorkerType = typeof import("./worker/worker.js");
 
 // Worker instance type
-let workerInstance: Comlink.Remote<WorkerType> | null = null;
+let workerInstance: Remote<WorkerType> & { readonly [key in typeof endpointSymbol]: Worker };
 
 // Function to create a worker instance
 export function createWorkerInstance() {
-    // Terminate the previous worker instance if it exists
+    // Terminate the previous worker instance
     terminateWorkerInstance();
 
     // Create a new worker and wrap it with Comlink
     const worker = new Worker(new URL("./worker/worker", import.meta.url), { type: "module" });
-    workerInstance = Comlink.wrap<WorkerType>(worker);
+    workerInstance = wrap<WorkerType>(worker) as Remote<WorkerType> & { readonly [key in typeof endpointSymbol]: Worker };
 
-    return workerInstance;
+    // Return the worker's endpoint
+    return workerInstance[endpointSymbol];
 }
 
 // Function to terminate the worker instance
 export function terminateWorkerInstance() {
-    if (workerInstance) {
-        // Terminate the worker if it exists
-        (workerInstance as unknown as Worker).terminate();
-        workerInstance = null;
+    if (workerInstance?.[endpointSymbol]) {
+        workerInstance[endpointSymbol].terminate();
     }
 }

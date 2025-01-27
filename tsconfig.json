@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-  
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"], // Add WebWorker support
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext", // Updated to nodenext for compatibility
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -19,8 +18,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vite-plugin-comlink", "node"] // Include types for vite-plugin-comlink and node
   },
-  "include": ["src",  "firebase-config.ts"],
+  "include": ["src", "firebase-config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
