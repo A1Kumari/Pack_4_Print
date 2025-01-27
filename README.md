@@ -1,78 +1,155 @@
-# 2d bin packing problem (working on an algorithm right now)
+# **Pack4Print**  
+The Ultimate Image Packing Solution for Print Optimization  
 
-## Sources
+Pack4Print is a powerful, intuitive web app designed to simplify the process of arranging and printing images. Built with advanced technologies including React, TypeScript, Redux, and React Konva, Pack4Print is a **Progressive Web App (PWA)** that offers a responsive, offline-capable experience.  
 
-https://www.intechopen.com/chapters/5850
-https://github.com/SebastianBitsch/bin-packing
+Whether you're printing an assortment of images in various dimensions or need precise arrangements for specific photo sizes, Pack4Print uses a cutting-edge **bin-packing algorithm** to maximize space usage and minimize paper waste, while allowing extensive customization options for layout and output quality.  
 
-Pack4Print: The Ultimate Image Packing Solution for Print Optimization
+---
 
-Pack4Print is a powerful, intuitive web app designed to simplify the process of arranging and printing images. Built with advanced technologies including React, TypeScript, Redux, and React Konva, Pack4Print is a Progressive Web App (PWA) that offers a responsive, offline-capable experience. Whether you're printing an assortment of images in various dimensions or need precise arrangements for specific photo sizes, Pack4Print uses a cutting-edge bin-packing algorithm to maximize space usage and minimize paper waste, all while allowing users extensive customization options for layout and output quality.
+## **Key Features**  
 
-Key Features of Pack4Print
+### **1. Two Distinct Packing Modes**  
 
-1. Two Distinct Packing Modes
-   Pack4Print offers two modes for different user needs:
+#### **Efficient Packing Mode**  
+- Automatically resizes and arranges images using a sophisticated **bin-packing algorithm** to maximize space utilization.  
+- Ideal for users looking to optimize page usage and reduce the number of printed pages.  
+- Customizable options include:  
+  - **Max Width %**: Set the maximum width for images as a percentage of the page size.  
+  - **Packing Efficiency Algorithm**: Adjust the efficiency-speed trade-off.  
+  - **Paper Size**: Select standard paper sizes (A4, Letter, etc.).  
 
-Efficient Packing Mode
-This mode is ideal for users seeking to optimize page usage and reduce the number of printed pages. In this mode, Pack4Print resizes images according to the selected paper size and automatically arranges them using a sophisticated bin-packing algorithm. This ensures the highest possible packing efficiency, minimizing unused space on each page.
+#### **Freeform Mode**  
+- Offers full manual control over image layout.  
+- Allows for free movement, resizing, and rotation of images for custom layouts.  
+- Perfect for creative compositions where precision and flexibility are paramount.  
 
-Freeform Mode
-Freeform mode gives users full control over the layout of images. Unlike Efficient Packing Mode, it allows for complete freedom in arranging images by hand, including overlapping and rotating images as needed. This mode is perfect for creative or custom layouts where precision and flexibility are more important than minimizing page count.
+---
 
-2. Cross-Mode Features
-   Both Efficient Packing and Freeform modes share a range of powerful and convenient features:
+### **2. Cross-Mode Features**  
+Both modes share a range of convenient and powerful features:  
 
-Image Resizing
-Users can adjust the dimensions of images manually to achieve the ideal fit within the chosen paper size. Pack4Print also offers a selection of preset image sizes (passport, visa, etc.) for easy and accurate resizing.
+- **Image Resizing**:  
+  - Manually adjust image dimensions or use preset sizes (e.g., passport, visa).  
 
-Drag-and-Drop and Paste Functionality
-With drag-and-drop support, users can quickly upload images directly to the workspace. Additionally, Ctrl+V functionality allows images to be pasted directly from the clipboard, making the process faster and more seamless.
+- **Drag-and-Drop and Paste Functionality**:  
+  - Quickly upload images by dragging them to the workspace or pasting directly using `Ctrl+V`.  
 
-Full-Page Preview
-Users can preview individual images within the full size of the selected paper (e.g., A4) to assess their relative scale before finalizing the layout.
+- **Full-Page Preview**:  
+  - View individual images in full size on the selected paper format.  
 
-Cropping Tools
-Pack4Print offers multiple cropping presets, so users can quickly and easily tailor images to fit specific ratios or dimensions.
+- **Cropping Tools**:  
+  - Choose from multiple cropping presets for precise tailoring.  
 
-Image Duplication
-Users can make copies of images to replicate layouts or print multiple versions of the same image on a page.
+- **Image Duplication**:  
+  - Replicate images for layouts requiring multiple copies.  
 
-Borders and Margins
-Customizable borders can be added to images to enhance presentation, while margins around the paper provide space for framing or binding.
+- **Borders and Margins**:  
+  - Add customizable borders for enhanced presentation.  
+  - Adjust margins to create spacing for framing or binding.  
 
-Paper Size Selection
-Choose from a variety of common paper sizes (A4, letter, etc.) to tailor the final layout to your specific needs.
+- **Paper Size Selection**:  
+  - Choose from common formats (A4, Letter, etc.).  
 
-PDF Export and Print Options
-Users can save the finalized layout as a PDF for easy sharing or future use. Direct print functionality is also available for desktop users, allowing them to print their layouts directly from Pack4Print.
+- **PDF Export and Print Options**:  
+  - Save layouts as PDF files or print directly from the app.  
 
-3. Features Exclusive to Freeform Mode
-   Image Movement
-   In Freeform mode, images can be freely moved across the workspace, with no restrictions on positioning. This allows for overlapping images or custom compositions that require precise manual adjustments.
+---
 
-Rotation
-Rotate images to fit within custom layouts or achieve the desired visual orientation.
+### **3. Exclusive Features by Mode**  
 
-4. Features Exclusive to Efficient Packing Mode
-   Packing Efficiency Control
-   Efficient Packing Mode offers a “packing efficiency” setting, allowing users to balance quality and speed. When there are many images to arrange, users can lower the efficiency to speed up processing, with the trade-off of potentially more pages or less compact arrangements.
+#### **Efficient Packing Mode**  
+- **Packing Efficiency Control**:  
+  - Adjust the balance between layout efficiency and processing speed.  
 
-Algorithm Selection
-Two algorithms are available in Efficient Packing Mode:
+- **Algorithm Selection**:  
+  - **Efficient Algorithm**: Maximizes space usage with advanced logic.  
+  - **Simple Algorithm**: Quickly arranges images in a row-by-row format.  
 
-Efficient Algorithm: Maximizes space usage through advanced bin-packing logic, taking anywhere from seconds to a few minutes depending on the complexity and number of images.
-Simple Algorithm: Arranges images in a straightforward row-by-row format, ideal for users who need quick results or are printing multiple images of the same size.
-Margin Customization
-Adjust the margins on all sides (top, bottom, left, and right) to create a well-spaced layout that suits printing needs.
+- **Margin and Padding Customization**:  
+  - Set margins and padding to avoid crowding or allow for cutting space.  
 
-Padding Between Images
-Add padding to ensure images aren’t crowded together, allowing for cleaner visual separation or space for cutting if needed.
+#### **Freeform Mode**  
+- **Image Movement**:  
+  - Freely position images across the workspace.  
+- **Rotation**:  
+  - Rotate images for custom orientations.  
 
-Technology Highlights
-Progressive Web App (PWA): Offline functionality ensures users can access and work on layouts even without an internet connection.
-Custom Drag-and-Drop Interface: Designed for ease of use, enabling rapid image uploads.
-Image Resizing Logic: Tailors images to paper dimensions or user specifications, ensuring efficient packing.
-React Konva Rendering: Provides a responsive, high-quality visual display of layouts.
-Efficient-Rect-Packer Integration: A custom npm package that applies an optimized bin-packing algorithm for layout efficiency.
-Pack4Print is an all-in-one solution for anyone needing a powerful, customizable tool for preparing images for print. Whether you’re aiming to save paper, create custom layouts, or both, Pack4Print’s intuitive interface and extensive features offer flexibility and precision for every print job.
+---
+
+## **Technology Highlights**  
+
+- **Progressive Web App (PWA)**:  
+  - Offline functionality ensures accessibility even without an internet connection.  
+
+- **Custom Drag-and-Drop Interface**:  
+  - Simplifies image uploads for a seamless user experience.  
+
+- **Image Resizing Logic**:  
+  - Dynamically adjusts images to fit user-specified or default paper dimensions.  
+
+- **React Konva Rendering**:  
+  - Provides responsive and high-quality visual layouts.  
+
+- **Efficient-Rect-Packer Integration**:  
+  - Leverages a custom npm package for optimized bin-packing algorithms.  
+
+---
+
+
+## 🛠️ Built With (Tech Stack)
+
+**Frontend:** React.js, TypeScript, Redux, Tailwind CSS, React Konva
+
+**Backend:** Efficient-Rect-Packer, Bin-Packing Algorithms: Includes advanced and simple packing algorithms:
+Efficient Algorithm: Uses a heuristic-based approach for optimal space utilization.
+Simple Algorithm: Row-by-row packing for quick and straightforward arrangements.
+
+**Tools & Libraries:** Vite, PostCSS, HTML5 Canvas
+
+
+**Database:** MongoDB for storing user data and progress.
+Color Picker: Integrated iro.js for precise shade selection.
+
+
+
+
+
+Additional Features
+PWA (Progressive Web App): Offline capabilities to ensure seamless user experience even without an internet connection.
+Drag-and-Drop Interface: Enables intuitive image uploads and manipulation.
+PDF Generation: Allows exporting layouts directly to PDF for easy sharing or printing.
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Demo
+
+Visit the deployed site to seethe demo by your own selve
+
