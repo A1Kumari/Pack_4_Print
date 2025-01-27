@@ -40,6 +40,7 @@
     "tailwindcss-animate": "^1.0.7",
     "use-image": "^1.1.1",
     "uuid": "^9.0.1",
+    "vite-Plugin-comlink": "npm:vite-plugin-comlink@^5.1.0",
     "vite-plugin-pwa": "^0.20.5"
   },
   "devDependencies": {
@@ -57,6 +58,6 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^5.4.5",
-    "vite-plugin-comlink": "^5.0.1"
+    "vite-plugin-comlink": "^5.1.0"
   }
 }
