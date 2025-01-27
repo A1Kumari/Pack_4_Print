@@ -1,10 +1,11 @@
 import jsPDF from "jspdf";
 // import { Box } from "./ImagePacker";
 import { v4 as uuidv4 } from "uuid";
-import { ImageBox } from "./pages/pack/Pack";
-import { ContainerType } from "./redux/features/slices/mainSlice";
-import html2canvas from "html2canvas";
+import { ImageBox } from "./pages/pack/Pack.js";
+import { ContainerType } from "./redux/features/slices/mainSlice.js";
 import printJS from "print-js";
+import html2canvas from "html2canvas";
+
 
 const makePDF = async (boxes: ImageBox[][], container: ContainerType) => {
     const pdf = new jsPDF({
@@ -17,7 +18,7 @@ const makePDF = async (boxes: ImageBox[][], container: ContainerType) => {
         const page = document.getElementById(`page-${i}`);
 
         if (page) {
-            const canvas = await html2canvas(page, { scale: 2.5 });
+            const canvas = await (html2canvas as any)(page, { scale: 2.5 });
             const imgData = canvas.toDataURL("image/png");
 
             pdf.addImage(imgData, "PNG", 0, 0, container.w, container.h);
