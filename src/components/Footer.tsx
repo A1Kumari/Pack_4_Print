@@ -9,11 +9,11 @@ const Footer = () => {
                     <span role="img" aria-label="heart">
                         ❤️
                     </span>{" "}
-                    by saifullah rahman (sciSaif)
+                    by arya Kumari 
                 </p>
             </div>
             <p className="text-sm text-gray-500">
-                Contact: saiflll284@gmail.com
+                Contact: aryakumari3954@gmail.com
             </p>
         </footer>
     );
